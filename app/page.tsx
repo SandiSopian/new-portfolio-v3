@@ -18,7 +18,7 @@ export default function Home() {
   const { github, linkedin, instagram, behance, medium } = socialMedia;
 
   return (
-    <>
+    <main>
       <section className="hero-section p-4">
         <figure>
           <Image
@@ -29,16 +29,16 @@ export default function Home() {
           />
         </figure>
 
-        <article className="rounded-lg bg-gray-400 p-4 flex justify-center items-center">
+        <p className="rounded-lg bg-gray-400 p-4 flex justify-center items-center">
           Hello, I’am Indie Front End Developer
-        </article>
+        </p>
 
-        <article className="flex flex-col items-center text-center mt-4">
+        <header className="flex flex-col items-center text-center mt-4">
           <h1 className="text-2xl">Sandi Sopian</h1>
           <h2 className="max-w-xs">
             Front End Developer <span>( Web Design / Web Developer )</span>
           </h2>
-        </article>
+        </header>
 
         <figure className="flex justify-center items-center mt-4">
           <Image
@@ -93,33 +93,58 @@ export default function Home() {
 
       <section className="socmed-section p-4 mt-4">
         <h3 className="font-bold underline">Connect With Me</h3>
-        <div className="flex flex-col items-start gap-2">
-          <Link href={github} className="flex items-center">
+        <address className="flex flex-col items-start gap-2">
+          <Link
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <FontAwesomeIcon icon={faGithub} />
             <span className="ml-2">@sandisopian</span>
           </Link>
 
-          <Link href={linkedin} className="flex items-center">
+          <Link
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
             <span className="ml-2">@sandisopian</span>
           </Link>
 
-          <Link href={behance} className="flex items-center">
+          <Link
+            href={behance}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <FontAwesomeIcon icon={faBehance} />
             <span className="ml-2">@sandisopian</span>
           </Link>
 
-          <Link href={medium} className="flex items-center">
+          <Link
+            href={medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <FontAwesomeIcon icon={faMediumM} />
             <span className="ml-2">@sandis1</span>
           </Link>
 
-          <Link href={instagram} className="flex items-center">
+          <Link
+            href={instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <FontAwesomeIcon icon={faInstagram} />
             <span className="ml-2">@sarendia__</span>
           </Link>
-        </div>
+        </address>
       </section>
-    </>
+    </main>
   );
 }
