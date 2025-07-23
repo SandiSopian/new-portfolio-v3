@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-accentPrimary: #513a2b;
+  --color-accentHover: #76543f;
+}
+
+@layer base {
+  html {
+    --color-text-default: #1f2937;
+    --color-bg-default: #ffffff;
+    color: var(--color-text-default);
+    background-color: var(--color-bg-default);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      --color-text-default: #ffffff;
+      --color-bg-default: #000000;
+    }
+  }
+}
