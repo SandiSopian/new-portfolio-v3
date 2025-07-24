@@ -31,7 +31,7 @@ export default function Home() {
         </figure>
 
         <p className="rounded-lg bg-gray-400 p-4 flex justify-center items-center">
-          {`Hello, I'm Indie Front End Developer`}
+          Hello, I&apos;m Indie Front End Developer
         </p>
 
         <header className="flex flex-col items-center text-center mt-4">
