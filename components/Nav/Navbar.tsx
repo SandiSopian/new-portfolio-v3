@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar Utama */}
-      <nav className="p-4 flex items-center justify-between relative z-50 bg-white shadow-md">
+      <nav className="p-4 flex items-center justify-between relative z-50 bg-white dark:bg-black shadow-md">
         {/* Logo */}
         <div className="flex items-center">
           <Image
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* NavLink (Mobile) */}
         <div
-          className={`absolute top-20 right-4 w-56 bg-white shadow-lg rounded-md px-4 flex flex-col gap-4 transition-all duration-300 ease-in-out origin-top-right md:hidden ${
+          className={`absolute top-20 right-4 w-56 bg-white dark:bg-black shadow-lg rounded-md px-4 flex flex-col gap-4 transition-all duration-300 ease-in-out origin-top-right md:hidden ${
             open
               ? "opacity-100 scale-100"
               : "opacity-0 scale-0 pointer-events-none"

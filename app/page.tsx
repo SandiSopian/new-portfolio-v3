@@ -11,6 +11,7 @@ import {
   faLinkedin,
   faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   const { heroImg } = heroSection;
@@ -51,15 +52,16 @@ export default function Home() {
         </figure>
 
         <article>
-          <h3 className="font-bold underline">Work</h3>
-          <p>
-            Lorem ipsum faucibus est at vel est donec odio ut urna proin quam
-            proin adipiscing amet facilisi arcu ac congue nulla donec duis
-            adipiscing nunc mattis est arcu quis nisi ultricies justo nascetur
-            et volutpat aenean massa urna penatibus placerat imperdiet est non
-            nibh non ultrices tristique arcu volutpat lacus egestas odio nunc
-            velit massa elit commodo nibh adipiscing leo felis sagittis senectus
-            tristique a at.
+          <h3 className="font-bold underline mb-2">Work</h3>
+          <p className="max-w-prose leading-relaxed text-wrap">
+            I'm a Front-End Developer with a background in Informatics
+            Engineering and over a decade of diverse work experience. I started
+            my career in customer service, transitioned into manufacturing as a
+            printing lab operator, and later pursued a degree while working
+            full-time. My passion for technology led me to web development,
+            where I now focus on building responsive and user-friendly
+            interfaces. I also share my learning journey through content
+            creation, aiming to inspire and help others grow in the tech space.
           </p>
         </article>
 
@@ -70,79 +72,44 @@ export default function Home() {
 
       <section className="journey-section p-4 mt-4">
         <h3 className="font-bold underline">My Journey</h3>
-        <p>
-          February 2022 Application UI code in Tailwind CSS Get access to over
-          20+ pages including a dashboard layout, charts, kanban board,
-          calendar, and pre-order E-commerce & Marketing pages. Learn more March
-          2022 Marketing UI design in Figma All of the pages and components are
-          first designed in Figma and we keep a parity between the two versions
-          even as we update the project. April 2022 E-Commerce UI code in
-          Tailwind CSS Get started with dozens of web components and interactive
-          elements built on top of Tailwind CSS.
-        </p>
+        <div>
+          <Timeline />
+        </div>
       </section>
 
       <section className="hobbies-section p-4 mt-4">
         <h3 className="font-bold underline">Hobbies</h3>
         <p>
-          February 2022 Application UI code in Tailwind CSS Get access to over
-          20+ pages including a dashboard layout, charts, kanban board,
-          calendar, and pre-order E-commerce & Marketing pages.
+          Gaming, Watching Movies, Reading Books, Music, Coding and Writing.
         </p>
       </section>
 
       <section className="socmed-section p-4 mt-4">
-        <h3 className="font-bold underline">Connect With Me</h3>
-        <address className="flex flex-col items-start gap-2">
-          <Link
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-            <span className="ml-2">@sandisopian</span>
-          </Link>
+        <div>
+          <h3 className="font-bold underline mb-4">Connect With Me</h3>
+        </div>
 
-          <Link
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-            <span className="ml-2">@sandisopian</span>
-          </Link>
-
-          <Link
-            href={behance}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <FontAwesomeIcon icon={faBehance} />
-            <span className="ml-2">@sandisopian</span>
-          </Link>
-
-          <Link
-            href={medium}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <FontAwesomeIcon icon={faMediumM} />
-            <span className="ml-2">@sandis1</span>
-          </Link>
-
-          <Link
-            href={instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-            <span className="ml-2">@sarendia__</span>
-          </Link>
+        <address className="flex flex-col gap-3 not-italic">
+          {[
+            { href: github, icon: faGithub, name: "@sandisopian" },
+            { href: linkedin, icon: faLinkedin, name: "@sandisopian" },
+            { href: behance, icon: faBehance, name: "@sandisopian" },
+            { href: medium, icon: faMediumM, name: "@sandis1" },
+            { href: instagram, icon: faInstagram, name: "@sarendia__" },
+          ].map((item, i) => (
+            <div key={i} className="flex items-center">
+              <FontAwesomeIcon icon={item.icon} className="w-5 h-5" />
+              <Link
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 relative inline-block group"
+              >
+                <span>{item.name}</span>
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-sky-600 transition-all duration-500 group-hover:w-full"></span>
+              </Link>
+            </div>
+          ))}
         </address>
       </section>
     </main>
