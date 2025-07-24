@@ -31,7 +31,7 @@ export default function Home() {
         </figure>
 
         <p className="rounded-lg bg-gray-400 p-4 flex justify-center items-center">
-          Hello, I’am Indie Front End Developer
+          Hello, I&apos;am Indie Front End Developer
         </p>
 
         <header className="flex flex-col items-center text-center mt-4">
@@ -54,7 +54,7 @@ export default function Home() {
         <article>
           <h3 className="font-bold underline mb-2">Work</h3>
           <p className="max-w-prose leading-relaxed text-wrap">
-            I'm a Front-End Developer with a background in Informatics
+            I&apos;m a Front-End Developer with a background in Informatics
             Engineering and over a decade of diverse work experience. I started
             my career in customer service, transitioned into manufacturing as a
             printing lab operator, and later pursued a degree while working
