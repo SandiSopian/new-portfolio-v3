@@ -34,22 +34,24 @@ export default function Home() {
           {`Hello, I'm Indie Front End Developer`}
         </p>
 
-        <header className="flex flex-col items-center text-center mt-4">
-          <h1 className="text-2xl">Sandi Sopian</h1>
-          <h2 className="max-w-xs">
-            Front End Developer <span>( Web Design / Web Developer )</span>
-          </h2>
-        </header>
+        <div className="md:flex md:justify-between mt-4">
+          <header className="flex flex-col items-center md:items-start text-center md:text-left mt-4">
+            <h1 className="text-2xl md:text-4xl">Sandi Sopian</h1>
+            <h2 className="max-w-xs">
+              Front End Developer <span>( Web Design / Web Developer )</span>
+            </h2>
+          </header>
 
-        <figure className="flex justify-center items-center mt-4">
-          <Image
-            src={profileImg}
-            alt="Profile Image"
-            width={100}
-            height={100}
-            className="rounded-full border-2 border-gray-300"
-          />
-        </figure>
+          <figure className="flex justify-center items-center mt-4">
+            <Image
+              src={profileImg}
+              alt="Profile Image"
+              width={100}
+              height={100}
+              className="rounded-full border-2 border-gray-300"
+            />
+          </figure>
+        </div>
 
         <article>
           <h3 className="font-bold underline mb-2">Work</h3>
