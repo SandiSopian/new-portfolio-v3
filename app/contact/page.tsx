@@ -23,8 +23,8 @@ const Contact = () => {
       <div className="text-center mt-4">
         <h3 className="font-bold underline">Contact Us</h3>
         <p className="lg:max-w-md mx-auto">
-          I'd love to hear from you Got a project you would like me to work on?
-          Or how about just a friendly chat?
+          I&apos;d love to hear from you Got a project you would like me to work
+          on? Or how about just a friendly chat?
         </p>
       </div>
 

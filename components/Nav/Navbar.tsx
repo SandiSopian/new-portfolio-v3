@@ -8,11 +8,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
-type NavbarProps = {
-  className?: string;
-};
-
-const Navbar = ({ className }: NavbarProps) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
