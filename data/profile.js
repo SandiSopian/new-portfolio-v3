@@ -16,4 +16,6 @@ export const socialMedia = {
   behance: "https://www.behance.net/sandisopian",
   instagram: "https://www.instagram.com/sarendia__/",
   medium: "https://medium.com/@sandis1",
+  phone: "https://wa.me/6281212345678",
+  email: "mailto:sandis17@outlook.com",
 };

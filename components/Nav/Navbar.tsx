@@ -8,13 +8,17 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import NavLink from "./NavLink";
 
-const Navbar = () => {
+type NavbarProps = {
+  className?: string;
+};
+
+const Navbar = ({ className }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
     <div>
       {/* Navbar Utama */}
-      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/60 dark:bg-black/50 shadow-md border-b border-gray-200 dark:border-gray-700 mx-auto"> 
+      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/60 dark:bg-black/50 shadow-md border-b border-gray-200 dark:border-gray-700 mx-auto">
         <div className="p-4 flex mx-auto justify-between md:justify-center lg:justify-center items-center gap-4 md:mr-54 lg:mr-0 lg:gap-12">
           {/* Logo */}
           <Link href="/" className="flex items-center hover:cursor-pointer">
@@ -45,7 +49,7 @@ const Navbar = () => {
           </div>
 
           {/* Toggle Button (Mobile Only) */}
-          
+
           <div
             onClick={() => setOpen(!open)}
             className="lg:hidden absolute top-8 right-10 md:right-56 hover:cursor-pointer"
@@ -55,8 +59,7 @@ const Navbar = () => {
               className="text-2xl hover:scale-110 transition-transform duration-200"
             />
           </div>
-          </div>
-        
+        </div>
       </nav>
     </div>
   );
