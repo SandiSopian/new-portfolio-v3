@@ -21,7 +21,7 @@ const Contact = () => {
       </figure>
 
       <div className="text-center mt-4">
-        <h3 className="font-bold underline">Contact Us</h3>
+        <h3 className="text-xl lg:text-lg font-bold underline">Contact Us</h3>
         <p className="lg:max-w-md mx-auto">
           I&apos;d love to hear from you Got a project you would like me to work
           on? Or how about just a friendly chat?
