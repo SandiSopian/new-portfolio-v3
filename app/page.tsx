@@ -19,7 +19,7 @@ export default function Home() {
   const { github, linkedin, instagram, behance, medium } = socialMedia;
 
   return (
-    <main>
+    <main className="mx-6 lg:mx-0">
       <section className="hero-section p-4">
         <figure>
           <Image

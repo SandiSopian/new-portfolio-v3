@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
+:root {
+  --font-primary: var(--font-poppins);
+  --font-secondary: var(--font-dm-sans);
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+}
+
 @theme {
   --color-white: #fff;
-  --color-purple: #3f3cbb;
-  --color-midnight: #121063;
-  --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca;
-  --color-accentPrimary: #513a2b;
-  --color-accentHover: #76543f;
+  --color-black: #000;
+  --color-steelEclipse: #1f2937;
+  --color-walnutBrown: #513a2b;
+  --color-terracottaRoot: #76543f;
 }
 
 @layer base {

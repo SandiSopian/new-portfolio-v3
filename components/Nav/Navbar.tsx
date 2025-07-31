@@ -36,7 +36,7 @@ const Navbar = () => {
                 : "opacity-0 scale-0 pointer-events-none"
             }`}
           >
-            <NavLink />
+            <NavLink onLinkClick={() => setOpen(false)} />
           </div>
 
           {/* NavLink (Desktop) */}
@@ -45,7 +45,6 @@ const Navbar = () => {
           </div>
 
           {/* Toggle Button (Mobile Only) */}
-
           <div
             onClick={() => setOpen(!open)}
             className="lg:hidden absolute top-8 right-10 md:right-56 hover:cursor-pointer"

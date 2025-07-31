@@ -4,14 +4,22 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavLink = () => {
+type NavLinkProps = {
+  onLinkClick?: () => void;
+};
+
+const NavLink = ({ onLinkClick }: NavLinkProps) => {
   const pathname = usePathname();
 
   const links = [
     { href: "/", label: "Home" },
     { href: "/contact", label: "Contact" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "https://sarendia.hashnode.dev/", label: "Blog", external: true },
+    {
+      href: "https://nakamapedia.blogspot.com/",
+      label: "Blog",
+      external: true,
+    },
     { href: "https://lynk.id/digisanshop", label: "Product", external: true },
   ];
 
@@ -32,6 +40,7 @@ const NavLink = () => {
           <Link
             key={href}
             href={href}
+            onClick={onLinkClick}
             className={
               pathname === href
                 ? "text-black dark:text-white font-bold underline"
