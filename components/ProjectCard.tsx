@@ -38,7 +38,7 @@ const ProjectCard = () => {
           </p>
           <a
             href={project.projectLink}
-            className="text-walnutBrown dark:text-sky-600 lg:text-sm hover:underline"
+            className="text-walnutBrown dark:text-sky-600 lg:text-sm hover:underline font-semibold"
           >
             View Project &gt;
           </a>
