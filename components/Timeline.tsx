@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 const timelineItems = [
   {
@@ -48,10 +51,33 @@ const timelineItems = [
 
 const Timeline = () => {
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      variants={{
+        hidden: {},
+        show: {
+          transition: {
+            staggerChildren: 0.15,
+          },
+        },
+      }}
+    >
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
         {timelineItems.map((item, index) => (
-          <li key={index} className="mb-10 ms-4">
+          <motion.li
+            key={index}
+            className="mb-10 ms-4"
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              show: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5, ease: "easeOut" },
+              },
+            }}
+          >
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               {item.date}
@@ -87,10 +113,10 @@ const Timeline = () => {
                 </svg>
               </a>
             )}
-          </li>
+          </motion.li>
         ))}
       </ol>
-    </div>
+    </motion.div>
   );
 };
 
