@@ -20,7 +20,7 @@ const NavLink = ({ onLinkClick }: NavLinkProps) => {
       label: "Blog",
       external: true,
     },
-    { href: "https://lynk.id/digisanshop", label: "Product", external: true },
+    { href: "https://lynk.id/digisanshop", label: "Products", external: true },
   ];
 
   return (

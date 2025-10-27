@@ -42,7 +42,11 @@ const Contact = () => {
         <address className="flex flex-col gap-3 not-italic">
           {[
             { href: phone, icon: faPhone, name: "+6281288825373" },
-            { href: email, icon: faEnvelope, name: "@sandis17@outlook.com" },
+            {
+              href: email,
+              icon: faEnvelope,
+              name: "@sandisopian.career@gmail.com",
+            },
           ].map((item, i) => (
             <motion.div
               key={i}
