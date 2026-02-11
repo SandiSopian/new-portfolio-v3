@@ -8,7 +8,7 @@ import { projectsList } from "../data/projects";
 const ProjectCard = () => {
   return (
     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 mx-6 lg:mx-0">
-      {projectsList.map((project, index) => (
+      {[...projectsList].reverse().map((project, index) => (
         <motion.li
           key={index}
           className="p-4 lg:p-2 rounded-lg text-center"

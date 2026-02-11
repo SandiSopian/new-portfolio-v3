@@ -4,6 +4,8 @@ import ProjectImg3 from "../public/images/project3.png";
 import ProjectImg4 from "../public/images/project4.png";
 import ProjectImg5 from "../public/images/project5.png";
 import ProjectImg6 from "../public/images/project6.png";
+import ProjectImg7 from "../public/images/project7.png";
+import ProjectImg8 from "../public/images/project8.png";
 
 export const projectsList = [
   {
@@ -48,5 +50,19 @@ export const projectsList = [
     projectDesc:
       "A landing page project created for portfolio purposes. Designed with a modern, responsive layout and attention to detail!",
     projectLink: "https://figma-to-nextjs-tailwindcss-slicing-6.vercel.app/",
+  },
+  {
+    projectImg: ProjectImg7,
+    projectTitle: "E-commerce Meat Store",
+    projectDesc:
+      "An e-commerce meat store project created for portfolio purposes. Featuring a user-friendly interface and seamless shopping experience!",
+    projectLink: "https://meatstore-website.vercel.app/",
+  },
+  {
+    projectImg: ProjectImg8,
+    projectTitle: "AI Text Helper",
+    projectDesc:
+      "An AI text helper project created for portfolio purposes. Designed to assist users in generating and improving text content efficiently!",
+    projectLink: "https://ai-text-helper.vercel.app/",
   },
 ];
