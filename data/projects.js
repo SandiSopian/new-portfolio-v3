@@ -6,26 +6,28 @@ import ProjectImg5 from "../public/images/project5.png";
 import ProjectImg6 from "../public/images/project6.png";
 import ProjectImg7 from "../public/images/project7.png";
 import ProjectImg8 from "../public/images/project8.png";
+import ProjectImg9 from "../public/images/project9.png";
 
 export const projectsList = [
   {
     projectImg: ProjectImg1,
     projectTitle: "Jongko Daging Mang Umis",
     projectDesc:
-      "I'm build simple Landing Pages for selling meats of cow and chickens",
+      "A responsive landing page developed for a local meat business, showcasing products with a clean layout and clear call-to-action to drive customer engagement.",
     projectLink: "https://jongko-daging-mang-umis.vercel.app/",
   },
   {
     projectImg: ProjectImg2,
-    projectTitle: "Venendria plants shop",
-    projectDesc: "I'm slicing my own figma design for e-commerce plants shop",
+    projectTitle: "Venendria Plants Shop",
+    projectDesc:
+      "A modern e-commerce landing page built from a custom Figma design, focusing on clean UI, responsive layout, and structured product presentation.",
     projectLink: "https://figma-to-next-js-tailwind-slicing-ver-1.vercel.app/",
   },
   {
     projectImg: ProjectImg3,
-    projectTitle: "Sarang Coffee cafe",
+    projectTitle: "Sarang Coffee Cafe",
     projectDesc:
-      "I'm slicing my own figma design for bussiness landing page coffee shop",
+      "A business landing page for a coffee shop, sliced from a self-designed Figma prototype and implemented with a responsive, visually engaging layout.",
     projectLink:
       "https://figma-to-next-js-tailwind-slicing-sarang-coffee-cafe.vercel.app/",
   },
@@ -33,14 +35,15 @@ export const projectsList = [
     projectImg: ProjectImg4,
     projectTitle: "Tara Trip Gallery",
     projectDesc:
-      "I'm slicing my own figma design for light gallery traveling website",
+      "A lightweight travel gallery website built from a custom Figma design, emphasizing visual storytelling, simplicity, and responsive performance.",
     projectLink:
       "https://figma-to-next-js-tailwind-slicing-tara-trip-gallery.vercel.app/",
   },
   {
     projectImg: ProjectImg5,
     projectTitle: "Clean and Simple Portfolio",
-    projectDesc: "I'm create clean and simple portfolio with static page",
+    projectDesc:
+      "A minimalist static portfolio website designed to highlight personal projects with a clean layout, structured content, and responsive design.",
     projectLink: "https://simple-portfolio-uiux.vercel.app/",
   },
   {
@@ -48,21 +51,28 @@ export const projectsList = [
     projectTitle:
       "Landing Page Bardi | Bardiner (Unofficial) | Created for Portfolio Purposes Only",
     projectDesc:
-      "A landing page project created for portfolio purposes. Designed with a modern, responsive layout and attention to detail!",
+      "An unofficial landing page concept inspired by Bardi/Bardiner, crafted for portfolio purposes with a modern interface, responsive layout, and strong visual hierarchy.",
     projectLink: "https://figma-to-nextjs-tailwindcss-slicing-6.vercel.app/",
   },
   {
     projectImg: ProjectImg7,
     projectTitle: "E-commerce Meat Store",
     projectDesc:
-      "An e-commerce meat store project created for portfolio purposes. Featuring a user-friendly interface and seamless shopping experience!",
+      "A functional e-commerce website concept for a meat store, featuring product listings, intuitive navigation, and a user-friendly shopping experience.",
     projectLink: "https://meatstore-website.vercel.app/",
   },
   {
     projectImg: ProjectImg8,
     projectTitle: "AI Text Helper",
     projectDesc:
-      "An AI text helper project created for portfolio purposes. Designed to assist users in generating and improving text content efficiently!",
+      "An AI-powered web application that assists users in generating and refining written content efficiently through an intuitive and responsive interface.",
     projectLink: "https://ai-text-helper.vercel.app/",
+  },
+  {
+    projectImg: ProjectImg9,
+    projectTitle: "AI Bug Explainer",
+    projectDesc:
+      "An AI-driven debugging assistant designed to analyze and explain code errors, helping developers understand issues more clearly and resolve them efficiently.",
+    projectLink: "https://ai-bug-explainer-teal.vercel.app/",
   },
 ];
