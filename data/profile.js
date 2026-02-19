@@ -14,7 +14,7 @@ export const socialMedia = {
   github: "https://github.com/SandiSopian",
   linkedin: "https://linkedin.com/in/sandi-sopian-007623227",
   behance: "https://www.behance.net/sandisopian",
-  instagram: "https://www.instagram.com/sarendia__/",
+  instagram: "https://www.instagram.com/sarendia_/",
   medium: "https://medium.com/@sandis1",
   phone: "https://wa.me/6281212345678",
   email: "mailto:sandisopian.career@gmail.com",

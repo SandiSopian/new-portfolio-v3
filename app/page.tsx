@@ -137,7 +137,7 @@ export default function Home() {
             { href: linkedin, icon: faLinkedin, name: "@sandisopian" },
             { href: behance, icon: faBehance, name: "@sandisopian" },
             { href: medium, icon: faMediumM, name: "@sandis1" },
-            { href: instagram, icon: faInstagram, name: "@sarendia__" },
+            { href: instagram, icon: faInstagram, name: "@sarendia_" },
           ].map((item, i) => (
             <motion.div
               key={i}
